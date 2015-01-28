@@ -1,0 +1,39 @@
+.panel {
+    margin-bottom: 0px;
+    height: 90%;
+}
+.panel-body{
+    padding: 0px;
+}
+#Panel-Content {
+    width: 100%;
+    height: 100%;
+}
+/* Start Side Bar */
+#side_bar {
+    float: left;
+    width: 15%;
+    height: 90%;
+    padding: 10px 0px;
+    background: #0480B5;
+    list-style-type: none;
+    color: #FFF;
+    
+}
+/* END Side Bar */
+#form-container {
+    float:left;
+    width: 85%;
+    height: 90%;
+    background: #FFFFFF;
+}
+.panel-footer {
+    padding-left: 15%;
+    width: 100%;
+    background-color: gray;
+    
+}
+#side-footer{
+
+
+}

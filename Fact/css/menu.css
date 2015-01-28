@@ -1,0 +1,108 @@
+.navbar{
+    margin: 0px;
+}
+.navbar ul li{
+    
+}
+#i-logo{
+    float: left;
+    width: 15%;
+    height: 40px;
+}
+#i-menu{
+    padding-left: 15%;
+}
+#nav-brand {
+    display: block;
+    float: left;
+    width: 15%;
+    color: #FFF;
+}
+#nav-mant {
+    background-image: url(../img/glyphicons/icons/glyphicons-281-settings.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}
+/*   Menu Mantenimiento   */
+
+#i-clie {
+    background-image: url(../img/glyphicons/icons/glyphicons-354-nameplate-alt.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    text-align: left;
+    padding-left: 20%;
+}
+#i-info {
+    background-image: url(../img/glyphicons/icons/glyphicons-196-circle-info.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    text-align: left;
+    padding-left: 20%;
+}
+
+#i-prod {
+    background-image: url(../img/glyphicons/icons/glyphicons-496-bed.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    text-align: left;
+    padding-left: 20%;
+}
+#i-righ {
+    background-image: url(../img/glyphicons/icons/glyphicons-45-keys.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    text-align: left;
+    padding-left: 20%;
+}
+#i-user {
+    background-image: url(../img/glyphicons/icons/glyphicons-353-nameplate.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    text-align: left;
+    padding-left: 20%;
+}
+
+#nav-fact {
+    background-image: url(../img/glyphicons/icons/glyphicons-539-invoice.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}
+/*   Menu Facturacion   */
+#i-brow {
+    background-image: url(../img/glyphicons/icons/glyphicons-378-riflescope.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    text-align: left;
+    padding-left: 20%;
+}
+#i-fact {
+    background-image: url(../img/glyphicons/icons/glyphicons-539-invoice.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    text-align: left;
+    padding-left: 20%;
+}
+#i-pres{
+    background-image: url(../img/glyphicons/icons/glyphicons-530-list-alt.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    text-align: left;
+    padding-left: 20%;
+}
+#i-repo {
+    background-image: url(../img/glyphicons/icons/glyphicons-41-stats.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    text-align: left;
+    padding-left: 20%;
+}
+/*    END Menu Facturacion   */
+/* Start Side Bar */
+
+#sidebar-menu {
+    width: 100%;
+    background: #0480B5;
+}
+/* END Side Bar */
