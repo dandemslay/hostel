@@ -1,5 +1,106 @@
-<h1>Formulario de Facturacon</h1>
-<form>
+<script>
+    $(document).ready(function() {
+        var foo = $('#foo');
 
+        function updateTime() {
+            var today=new Date();
+            var d=today.getDate();
+            var m= today.getMonth() + 1;
+            var y=today.getFullYear();
+            var h=today.getHours();
+            var m=today.getMinutes();
+            var s=today.getSeconds();
+            m = checkTime(m);
+            s = checkTime(s);       
+            var date = d+"/"+m+"/"+y+" "+h+":"+m+":"+s;
+            foo.val(date.toString());        
+        }
 
-</form>
+        function checkTime(i) {
+            if (i<10) {i = "0" + i};  // add zero in front of numbers < 10
+            return i;
+        }
+
+        updateTime();
+        setInterval(updateTime, 1000); // 5 * 1000 miliseconds
+    });
+
+    function startTime() {
+        var today=new Date();
+        var d=today.getDate();
+        var m= today.getMonth() + 1;
+        var y=today.getFullYear();
+        var h=today.getHours();
+        var m=today.getMinutes();
+        var s=today.getSeconds();
+        m = checkTime(m);
+        s = checkTime(s);
+        document.getElementById('clock').innerHTML = d+"/"+m+"/"+y+" "+h+":"+m+":"+s;
+        var t = setTimeout(function(){startTime()},500);
+    }
+
+    function checkTime(i) {
+        if (i<10) {i = "0" + i};  // add zero in front of numbers < 10
+        return i;
+    }
+
+</script>
+</head>
+
+<body onload="startTime()">
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <ul class="nav navbar-nav">                                
+            <li><a>Facturar</a></li>
+    
+        </ul>
+        <form class="navbar-form navbar-right">
+           
+            <input type="button" value="Imprimir" onclick="javascript:window.print()"  class="btn btn-primary" />
+            
+            <button type="submit" class="btn btn-primary">Cancelar</button>
+        </form>
+    </div>
+</nav>
+<div class="panel-body">
+    <form class="navbar-form navbar-left">
+        <div class="input-group input-group-lg">
+            <span class="input-group-addon" id="">Fecha:</span>
+            <input id="foo" name="foo" value="" type="text" class="list-group-item form-control"  disabled="disabled"/>
+            <div id="clock">      </div>
+        </div>
+        <p></p>
+        <div class="input-group input-group-lg">
+          <span class="input-group-addon" id="">Identificaci&oacute;n</span>
+            <input id="identification" type="text" class="list-group-item form-control" placeholder="C&eacute;dula, Pasaporte, Etc.." aria-describedby="">
+        </div>
+        <p></p>
+        <div class="input-group input-group-lg">
+                <span class="input-group-addon" id="">Cliente </span><input type="text" class="list-group-item form-control" placeholder="Nombre del Cliente" aria-describedby="">
+        </div>
+        <p></p>
+        <div class="input-group input-group-lg">
+            <span class="input-group-addon" id="">Habitaci&oacute;n </span>
+            <input type="text" class="form-control"  placeholder="Numero de Habitaci&oacute;n" aria-describedby="">
+        </div>
+    
+        <p></p>
+            <div class="input-group input-group-lg">
+                <span class="input-group-addon" id="">Detalle</span>
+                <input type="text" class="form-control" placeholder="Detalle de la Operacion" aria-describedby="">
+            </div>
+        <p></p>
+            <div class="input-group input-group-lg">
+                <span class="input-group-addon" id="">$</span>
+                <input type="text" class="form-control" placeholder="Monto" aria-describedby="">
+                <span class="input-group-addon" id="">.00</span>
+            </div>
+        <p></p>
+        <div class="input-group input-group-lg">
+            <span class="input-group-addon" id="">Comentarios</span>
+            <textarea type="text" class="form-control" placeholder="Detalles Adicionales" aria-describedby=""></textarea> 
+        </div>
+
+    </form>
+</div>
+</body>

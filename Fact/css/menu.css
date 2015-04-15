@@ -2,7 +2,7 @@
     margin: 0px;
 }
 .navbar ul li{
-    
+    display: inline;
 }
 #i-logo{
     float: left;
@@ -20,6 +20,12 @@
 }
 #nav-mant {
     background-image: url(../img/glyphicons/icons/glyphicons-281-settings.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}
+#i-out {
+    background-image: url(../img/glyphicons/icons/glyphicons-389-exit.png);
     background-position: left;
     background-repeat: no-repeat;
     padding-left: 30px;
@@ -70,7 +76,7 @@
     padding-left: 30px;
 }
 /*   Menu Facturacion   */
-#i-brow {
+#i-sear {
     background-image: url(../img/glyphicons/icons/glyphicons-378-riflescope.png);
     background-position: left;
     background-repeat: no-repeat;

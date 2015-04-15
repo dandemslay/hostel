@@ -1,6 +1,7 @@
 
 //---Start Menu ----//
 $(document).ready( function() {
+   
     //---- START NAV BAR MENU ---//
     $("#i-menu").load("html/menu.html");
     //---- END NAV BAR MENU ---//
@@ -10,21 +11,32 @@ $(document).ready( function() {
         });
         //---End Open Mant
         //---Start Open Mant Sub M
+            //---Start Mant Clients
+            $("#i-clie").on("click", function() {
+                $("#form-container").load("html/mant-clients.html");    
+            });
+            //---End Open Mant Clients
+            //---Start Mant Info
+            $("#i-info").on("click", function() {
+                $("#form-container").load("html/mant-info.html");    
+            });
+            //---End Open Mant Info
+            //---Start Mant Prod
+            $("#i-prod").on("click", function() {
+                $("#form-container").load("html/mant-prod.html");    
+            });
+            //---End Open Mant Prod
             //---Start Mant Users
             $("#i-user").on("click", function() {
                 $("#form-container").load("html/mant-users.html");
             });
             //---End Mant Users
             //---Start Mant Rights
-            $("#i-rights").on("click", function() {
+            $("#i-righ").on("click", function() {
                 $("#form-container").load("html/mant-rigths.html");
             });
             //---End Mant Rights
-            //---Start Mant Clients
-            $("#i-clie").on("click", function() {
-                $("#form-container").load("html/mant-clients.html");    
-            });
-            //---End Open Mant Clients
+
         //---End Open Mant Sub M
         //---Start Open Fact
         $("#nav-fact").on("click", function() {
@@ -33,8 +45,8 @@ $(document).ready( function() {
         //---End Open Fact
         //---Start Open Fact Sub M
             //---Start Open Fact Browse
-            $("#i-brow").on("click", function() {
-                $("#form-container").load("html/fact-brow.html");    
+            $("#i-sear").on("click", function() {
+                $("#form-container").load("html/fact-sear.html");    
             });
             //---End Open Fact Browse
  
@@ -56,4 +68,7 @@ $(document).ready( function() {
             });
             //---End Open Fact Reports
         //---End Open Fact Sub M
+
+
+    
 });

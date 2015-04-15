@@ -37,3 +37,8 @@
 
 
 }
+
+@media print {
+    #side_bar {display:none;}
+    .panel-footer {display:none;}
+}
