@@ -59,14 +59,25 @@
         </ul>
         <form class="navbar-form navbar-right">
            
-            <input type="button" value="Imprimir" onclick="javascript:window.print()"  class="btn btn-primary" />
+            <button type="submit" value="Imprimir" onclick="javascript:window.print()"  class="btn btn-primary">Imprimir</button>
             
             <button type="submit" class="btn btn-primary">Cancelar</button>
         </form>
     </div>
 </nav>
 <div class="panel-body">
-    <form class="navbar-form navbar-left">
+    <div id="header-reg" >
+        <h1>Hostel Elvis la Posada S.A.</h1>
+        <p>
+            Lic. ITC: 101154 Ced. Juridica: 3-101-571348<br />
+            Av. 3 y 5 Calle 22, Frente a Episcopal de Costa Rica<br />
+            San Jose, Costa Rica<br />
+            Telefono: (506) 2257-3394 Fax: (506) 2256-0591<br />
+            Web Site: www.hotelelvislaposada.com<br />
+            E-Mail: info@hostelvis.com
+        </p>
+    </div>
+    <form class="navbar-form navbar-left" action="php/reg-fact.php">
         <div class="input-group input-group-lg">
             <?php
              
@@ -74,7 +85,7 @@
             <span class="input-group-addon" id="">Fecha:</span>
             <input id="foo" name="foo" type="text" class="list-group-item form-control"  disabled="disabled"/>
             <span class="input-group-addon" id="">N</span>
-            <input id="num" type="text" class="list-group-item form-control"  disabled="disabled"/>
+            <input id="num" type="text" class="list-group-item form-control"  />
             <div id="clock">      </div>
         </div>
         <p></p>
@@ -104,5 +115,15 @@
         </div>
 
     </form>
+    <div id="footer-reg" >
+        <p>
+            Renuncio a mi domicilio y los Tr&aacute;mites de Juicio Ejecutivo,
+            al mismo tiempo doy por aceptadas las condiciones del C&oacute;digo
+            de Comercio seg&uacute;n el Art. 460. Todo pago con cheque queda 
+            sujeto al hacerlo efectivo por el banco correpondiente.
+            Despu&eacute;s de la fecha de vencimiento este comprobante tendr&aacute;
+            un recargo de un 5% mensual.
+        </p>
+    </div>
 </div>
 </body>
