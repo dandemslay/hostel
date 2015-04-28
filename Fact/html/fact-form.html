@@ -5,14 +5,14 @@
         function updateTime() {
             var today=new Date();
             var d=today.getDate();
-            var m= today.getMonth() + 1;
+            var mo= today.getMonth() + 1;
             var y=today.getFullYear();
             var h=today.getHours();
             var m=today.getMinutes();
             var s=today.getSeconds();
             m = checkTime(m);
             s = checkTime(s);       
-            var date = d+"/"+m+"/"+y+" "+h+":"+m+":"+s;
+            var date = d+"/"+mo+"/"+y+" "+h+":"+m+":"+s;
             foo.val(date.toString());        
         }
 
@@ -45,6 +45,9 @@
     }
 
 </script>
+
+
+
 </head>
 
 <body onload="startTime()">
@@ -65,8 +68,13 @@
 <div class="panel-body">
     <form class="navbar-form navbar-left">
         <div class="input-group input-group-lg">
+            <?php
+             
+            ?>
             <span class="input-group-addon" id="">Fecha:</span>
-            <input id="foo" name="foo" value="" type="text" class="list-group-item form-control"  disabled="disabled"/>
+            <input id="foo" name="foo" type="text" class="list-group-item form-control"  disabled="disabled"/>
+            <span class="input-group-addon" id="">N</span>
+            <input id="num" type="text" class="list-group-item form-control"  disabled="disabled"/>
             <div id="clock">      </div>
         </div>
         <p></p>
@@ -76,24 +84,18 @@
         </div>
         <p></p>
         <div class="input-group input-group-lg">
-                <span class="input-group-addon" id="">Cliente </span><input type="text" class="list-group-item form-control" placeholder="Nombre del Cliente" aria-describedby="">
+                <span class="input-group-addon" id="">Nombre </span>
+                <input type="text" class="list-group-item form-control" placeholder="Nombre del Cliente" aria-describedby="">
+                <span class="input-group-addon" id="">Apellidos </span>
+                <input type="text" class="list-group-item form-control" placeholder="Apellidos del Cliente" aria-describedby="">
         </div>
         <p></p>
         <div class="input-group input-group-lg">
             <span class="input-group-addon" id="">Habitaci&oacute;n </span>
             <input type="text" class="form-control"  placeholder="Numero de Habitaci&oacute;n" aria-describedby="">
-        </div>
-    
-        <p></p>
-            <div class="input-group input-group-lg">
-                <span class="input-group-addon" id="">Detalle</span>
-                <input type="text" class="form-control" placeholder="Detalle de la Operacion" aria-describedby="">
-            </div>
-        <p></p>
-            <div class="input-group input-group-lg">
+
                 <span class="input-group-addon" id="">$</span>
                 <input type="text" class="form-control" placeholder="Monto" aria-describedby="">
-                <span class="input-group-addon" id="">.00</span>
             </div>
         <p></p>
         <div class="input-group input-group-lg">
