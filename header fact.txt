@@ -1,0 +1,21 @@
+Header
+
+	Hostel Elvis la Posada S.A.
+
+	Lic. ITC: 101154
+	Ced. Juridica: 3-101-571348
+	Av. 3 y 5 Calle 22, Frente a Episcopal de Costa Rica
+	San Jose, Costa Rica
+	Telefono: (506) 2257-3394 Fax: (506) 2256-0591
+	Web Site: www.hotelelvislaposada.com
+	E-Mail: info@hostelvis.com
+
+
+Footer:
+
+	Renuncio a mi domicilio y los Tr&aacute;mites de Juicio Ejecutivo,
+	al mismo tiempo doy por aceptadas las condiciones del C&oacute;digo
+	de Comercio seg&uacute;n el Art. 460. Todo pago con cheque queda 
+	sujeto al hacerlo efectivo por el banco correpondiente.
+	Despu&eacute;s de la fecha de vencimiento este comprobante tendr&aacute;
+	un recargo de un 5% mensual.
